@@ -91,16 +91,14 @@ export const bentoRevealAnimation = {
     rotateY: 5, 
     scale: 1.02,
     boxShadow: '0 20px 40px rgba(0,0,0,0.1)'
-  },
-  transition: { duration: 0.6, ease: [0.6, -0.05, 0.01, 0.99] }
+  }
 }
 
 // Shoji sliding door animation
 export const shojiSlideAnimation = {
   initial: { opacity: 0, clipPath: 'inset(0 100% 0 0)' },
   animate: { opacity: 1, clipPath: 'inset(0 0% 0 0)' },
-  exit: { opacity: 0, clipPath: 'inset(0 100% 0 0)' },
-  transition: { duration: 0.8, ease: [0.6, -0.05, 0.01, 0.99] }
+  exit: { opacity: 0, clipPath: 'inset(0 100% 0 0)' }
 }
 
 // Lantern glow effect for videos
@@ -111,8 +109,7 @@ export const lanternGlowAnimation = {
       '0 0 40px rgba(233, 166, 166, 0.7)',
       '0 0 20px rgba(233, 166, 166, 0.5)'
     ],
-    scale: 1.05,
-    transition: { duration: 2, repeat: Infinity, repeatType: 'reverse' }
+    scale: 1.05
   }
 }
 

@@ -14,10 +14,10 @@ const Contact = () => {
     message: ''
   })
 
-  const [errors, setErrors] = useState({})
+  const [errors, setErrors] = useState<{[key: string]: string}>({})
   const [isSubmitting, setIsSubmitting] = useState(false)
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target
     setFormData(prev => ({
       ...prev,
@@ -33,7 +33,7 @@ const Contact = () => {
   }
 
   const validateForm = () => {
-    const newErrors = {}
+    const newErrors: {[key: string]: string} = {}
     
     if (!formData.name.trim()) newErrors.name = 'Name is required'
     if (!formData.email.trim()) newErrors.email = 'Email is required'
@@ -46,7 +46,7 @@ const Contact = () => {
     return Object.keys(newErrors).length === 0
   }
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     
     if (!validateForm()) return

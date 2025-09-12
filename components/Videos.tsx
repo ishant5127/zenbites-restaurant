@@ -94,8 +94,15 @@ const Videos = () => {
             >
               <motion.div
                 className="card-zen overflow-hidden"
-                variants={lanternGlowAnimation}
-                whileHover="whileHover"
+                whileHover={{
+                  boxShadow: [
+                    '0 0 20px rgba(233, 166, 166, 0.5)',
+                    '0 0 40px rgba(233, 166, 166, 0.7)',
+                    '0 0 20px rgba(233, 166, 166, 0.5)'
+                  ],
+                  scale: 1.05
+                }}
+                transition={{ duration: 2, repeat: Infinity, repeatType: 'reverse' as const }}
               >
                 {/* Video Thumbnail/Player */}
                 <div className="relative aspect-video bg-gray-900 overflow-hidden">
