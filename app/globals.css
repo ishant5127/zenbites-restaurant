@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho:wght@400&family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-ink-black bg-rice-paper;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sawarabi Mincho', serif;
+  }
+}
+
+@layer components {
+  .btn-zen {
+    @apply px-8 py-4 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-lg;
+  }
+
+  .btn-primary {
+    @apply btn-zen bg-gradient-to-r from-zen-green to-zen-green/90 text-white hover:from-zen-green/90 hover:to-zen-green shadow-2xl hover:shadow-zen-green/30;
+  }
+
+  .btn-secondary {
+    @apply btn-zen bg-white/10 backdrop-blur-md text-white border-2 border-white/30 hover:bg-white hover:text-zen-green shadow-2xl;
+  }
+
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-20 md:py-28;
+  }
+
+  .container-zen {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .text-zen-title {
+    @apply text-4xl md:text-5xl lg:text-6xl font-sawarabi text-ink-black leading-tight drop-shadow-sm;
+  }
+
+  .text-zen-subtitle {
+    @apply text-xl md:text-2xl font-noto text-zen-green font-light drop-shadow-sm;
+  }
+
+  .card-zen {
+    @apply bg-white/90 backdrop-blur-md rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 border border-white/20;
+  }
+
+  .brushstroke-underline {
+    position: relative;
+  }
+
+  .brushstroke-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #E9A6A6, #6B8E23, #E9A6A6);
+    transition: width 0.4s ease;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .brushstroke-underline:hover::after {
+    width: 100%;
+  }
+
+  /* Enhanced Rice paper texture overlay */
+  .rice-paper-bg {
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(250, 243, 224, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(250, 243, 224, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 40% 80%, rgba(250, 243, 224, 0.15) 0%, transparent 50%),
+      linear-gradient(45deg, rgba(233, 166, 166, 0.02) 25%, transparent 25%);
+    background-color: #FAF3E0;
+    background-size: 100px 100px, 150px 150px, 120px 120px, 20px 20px;
+  }
+
+  /* Enhanced Sakura petal styles */
+  .sakura-petal {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: linear-gradient(45deg, #E9A6A6, #d49595);
+    border-radius: 50% 0 50% 0;
+    opacity: 0.8;
+    pointer-events: none;
+    box-shadow: 0 2px 4px rgba(233, 166, 166, 0.3);
+  }
+}
+
+@layer utilities {
+  .text-shadow-zen {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3), 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  .text-shadow-strong {
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6), 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+
+  .backdrop-glow {
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+}
