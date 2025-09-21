@@ -1,6 +1,6 @@
 # ZenBites - Buddhist Japanese Vegetarian Kitchen
 
-A modern, single-page restaurant website built with Next.js 14, featuring a Japanese Zen aesthetic and mindful dining experience.
+A modern, single-page restaurant website built with Next.js 14, featuring a Japanese Zen aesthetic and mindful dining experience with authentic menu photography.
 
 ## 🌸 Features
 
