@@ -12,7 +12,7 @@ const Menu = () => {
       price: '₹250',
       description: 'Steamed young soybeans with sea salt and sesame',
       category: 'appetizer',
-      image: 'https://images.unsplash.com/photo-1583225214464-9296029427aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+      image: '/images/Edamame.jpg'
     },
     {
       name: 'Goma-ae',
@@ -20,7 +20,7 @@ const Menu = () => {
       price: '₹280',
       description: 'Spinach with rich sesame dressing',
       category: 'appetizer',
-      image: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+      image: '/images/Goma-ae.jpg'
     },
     {
       name: 'Miso Soup',
@@ -28,7 +28,7 @@ const Menu = () => {
       price: '₹220',
       description: 'Traditional fermented soybean broth with tofu and wakame',
       category: 'soup',
-      image: 'https://images.unsplash.com/photo-1606756790138-261d2b21cd75?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+      image: '/images/Miso Soup.jpg'
     },
     {
       name: 'Shojin Tempura',
@@ -36,7 +36,7 @@ const Menu = () => {
       price: '₹450',
       description: 'Light, crispy vegetables in traditional temple-style batter',
       category: 'main',
-      image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+      image: '/images/Shojin tempura.jpg'
     },
     {
       name: 'Vegetarian Sushi Rolls',
@@ -44,7 +44,7 @@ const Menu = () => {
       price: '₹400',
       description: 'Fresh cucumber, avocado, and pickled vegetables',
       category: 'main',
-      image: 'https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+      image: '/images/Veg Sushi Roll.jpg'
     },
     {
       name: 'Tofu Steak',
@@ -52,7 +52,7 @@ const Menu = () => {
       price: '₹500',
       description: 'Grilled tofu with teriyaki glaze and seasonal vegetables',
       category: 'main',
-      image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+      image: '/images/Tofu Steak.jpg'
     },
     {
       name: 'Zaru Soba',
@@ -60,7 +60,7 @@ const Menu = () => {
       price: '₹380',
       description: 'Cold buckwheat noodles with dipping sauce',
       category: 'main',
-      image: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+      image: '/images/Zaru Soba.jpg'
     },
     {
       name: 'Matcha Ice Cream',
@@ -68,7 +68,7 @@ const Menu = () => {
       price: '₹300',
       description: 'Creamy green tea ice cream with red bean paste',
       category: 'dessert',
-      image: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+      image: '/images/Matcha Ice Cream.jpg'
     },
     {
       name: 'Sweet Red Bean Mochi',
@@ -76,7 +76,7 @@ const Menu = () => {
       price: '₹320',
       description: 'Soft rice cakes filled with sweet adzuki bean paste',
       category: 'dessert',
-      image: 'https://images.unsplash.com/photo-1582716401301-b2407dc7563d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+      image: '/images/Sweet Red Bean Mochi.jpg'
     },
     {
       name: 'Green Tea',
